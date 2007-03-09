@@ -1,17 +1,12 @@
 use strict;
 use warnings;
-use ExtUtils::MakeMaker;
+use inc::Module::Install;
 
-WriteMakefile(
-    NAME                => 'Acme::Hyde',
-    AUTHOR              => 'Tetsunari Nozaki <nozzzzz@gmail.com>',
-    VERSION_FROM        => 'lib/Acme/Hyde.pm',
-    ABSTRACT_FROM       => 'lib/Acme/Hyde.pm',
-    PL_FILES            => {},
-    PREREQ_PM => {
-        'Test::More' => 0,
-        'version'    => 0,
-    },
-    dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
-    clean               => { FILES => 'Acme-Hyde-*' },
-);
+name 'Acme-Hyde';
+all_from 'lib/Acme/Hyde.pm';
+
+requires 'Exporter' => 0;
+
+use_test_base;
+auto_install;
+WriteAll;
