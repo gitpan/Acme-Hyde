@@ -1,6 +1,6 @@
 ---
 name: Acme-Hyde
-version: 0.03
+version: 0.04
 author:
   - 'Tetsunari Nozaki <nozzzzz@gmail.com>'
 abstract: Hyde Calculator
@@ -14,7 +14,7 @@ requires:
 provides:
   Acme::Hyde:
     file: lib/Acme/Hyde.pm
-    version: 0.03
+    version: 0.04
 generated_by: Module::Build version 0.2805
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html

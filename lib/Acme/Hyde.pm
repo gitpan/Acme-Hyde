@@ -6,7 +6,7 @@ use POSIX;
 
 use base qw/Exporter/;
 our @EXPORT = qw/to_hyde from_hyde/;
-our $VERSION = 0.03;
+our $VERSION = 0.04;
 
 sub to_hyde {
     my $cm = shift;
